@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './app.css';
+import './app.scss';
 import ReactImage from './react.png';
 
 export default class App extends Component {
@@ -17,6 +17,7 @@ export default class App extends Component {
       <div>
         {username ? <h1>{`Hello ${username}`}</h1> : <h1>Loading.. please wait!</h1>}
         <img src={ReactImage} alt="react" />
+        <div>hello world</div>
       </div>
     );
   }
