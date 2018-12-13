@@ -1,0 +1,9 @@
+{"cours": {
+    "title": "React",
+    "description": "Le cours comprend tout les rudiments de la librairie React JS",
+    "image": "../img/react.png",
+    "cost": "5",
+    "time": "30",
+    "link": "cours/1/react"
+    }
+}

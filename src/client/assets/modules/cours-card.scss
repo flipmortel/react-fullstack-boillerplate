@@ -1,0 +1,37 @@
+.card-container {
+    background-color: #ff8200;
+    color: #215b6a;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    max-width: 400px;
+    // item avec marge
+
+    .card-title,
+    .card-description, 
+    .card-time-cost-container {
+        margin: 20px;
+    }
+      
+    .card-title {
+        font-size: 40px;
+        font-weight: bold;
+        padding-top: 20px;
+        text-align: center;
+    }
+    .card-image {
+        max-width: 400px;
+    }
+    .card-description {
+        font-size: 20px;
+        font-weight: 600;
+        color:#fff;
+    }
+    .card-time-cost-container {
+        display: flex;
+        justify-content: space-between;
+        span {
+            padding: 20px 0;
+            font-size: 18px;
+            color: #fff;
+        }
+    }
+}
