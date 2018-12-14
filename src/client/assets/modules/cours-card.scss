@@ -2,9 +2,10 @@
     background-color: #ff8200;
     color: #215b6a;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    max-width: 400px;
+    max-width: 300px;
+    width: 100%;
+    
     // item avec marge
-
     .card-title,
     .card-description, 
     .card-time-cost-container {
@@ -18,7 +19,9 @@
         text-align: center;
     }
     .card-image {
-        max-width: 400px;
+        max-width: 300px;
+        width: 100%;
+        height: auto;
     }
     .card-description {
         font-size: 20px;
