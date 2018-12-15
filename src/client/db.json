@@ -5,5 +5,17 @@
     "cost": "5",
     "time": "30",
     "link": "cours/1/react"
-    }
+    },
+    "menuItemList": {
+        "title": "Technologie",
+        "items": ["React","Angular","Vue js","JQuery"]
+    },
+    "menuItemList2": {
+        "title": "Audio",
+        "items": ["Logic pro X","Serum","Mixing","Production"]
+    },
+    "menuItemList3": {
+        "title": "Multimédia",
+        "items": ["Vidéo","Animation","3D","Graphisme"]
+    }     
 }

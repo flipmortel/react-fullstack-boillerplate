@@ -1,0 +1,25 @@
+.aside-container {
+    background-color: #333; 
+    .aside-title {
+        background-color: $orange;
+        color: #333;
+        padding: 10px 5px;
+        margin: 0;
+        &:first-child {
+            background-color: $lightblue;
+        }
+        
+    } // a remover
+    .aside-title-last {
+        background-color: $green;
+    }
+    .aside-list {
+        list-style-type: none;
+        padding-left: 0;
+        margin: 0;
+    }
+    .aside-item {
+        padding: 5px; 
+        color: #fff;   
+    }
+}
