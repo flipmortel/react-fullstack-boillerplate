@@ -4,34 +4,30 @@ import '../app.scss';
 import data from '../db.json';
 
 
-export default class Aside extends Component {
-  
+export default class Aside extends Component {// eslint-disable-line react/prefer-stateless-function
+
   render() {
+    console.log(data.aside[1].items);
     return (
       <div className="aside-container">
-        <h2 className="aside-title">{data.menuItemList.title}</h2>
+        <h2 className="aside-title">{data.aside[0].title}</h2>
         <ul className="aside-list">
-          <li className="aside-item">{data.menuItemList.items[0]}</li>
-          <li className="aside-item">{data.menuItemList.items[1]}</li>
-          <li className="aside-item">{data.menuItemList.items[2]}</li>
-          <li className="aside-item">{data.menuItemList.items[3]}</li>
+          <li className="aside-item">{data.aside[0].items[0]}</li>
+          <li className="aside-item">{data.aside[0].items[1]}</li>
+          <li className="aside-item">{data.aside[0].items[2]}</li>
+          <li className="aside-item">{data.aside[0].items[3]}</li>
         </ul>
-        <h2 className="aside-title">{data.menuItemList2.title}</h2>
-        <ul className="aside-list">
-          <li className="aside-item">{data.menuItemList2.items[0]}</li>
-          <li className="aside-item">{data.menuItemList2.items[1]}</li>
-          <li className="aside-item">{data.menuItemList2.items[2]}</li>
-          <li className="aside-item">{data.menuItemList2.items[3]}</li>
-        </ul>
-        <h2 className="aside-title aside-title-last">{data.menuItemList3.title}</h2>
-        <ul className="aside-list">
-          <li className="aside-item">{data.menuItemList3.items[0]}</li>
-          <li className="aside-item">{data.menuItemList3.items[1]}</li>
-          <li className="aside-item">{data.menuItemList3.items[2]}</li>
-          <li className="aside-item">{data.menuItemList3.items[3]}</li>
-        </ul>
+        {/* {data.aside.map((item, i) => (
+          <React.fragment key={i}>
+            <h2 className="aside-title">{item.title}</h2>
+            <ul className="aside-list">
+            {data.aside[i].items.map((itemChild, j) => <li className="aside-item" key={j}>{itemChild}</li>)
+              }
+            </ul>
+          </React.fragment>
+        ))
+        } */}
       </div>
-      
     );
   }
 }

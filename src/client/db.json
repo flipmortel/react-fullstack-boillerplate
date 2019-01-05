@@ -1,21 +1,24 @@
-{"cours": {
-    "title": "React",
-    "description": "Le cours comprend tout les rudiments de la librairie React JS",
-    "image": "../img/react.png",
-    "cost": "5",
-    "time": "30",
-    "link": "cours/1/react"
+{   
+    "cours": {
+        "title": "React",
+        "description": "Le cours comprend tout les rudiments de la librairie React JS",
+        "image": "../img/react.png",
+        "cost": "5",
+        "time": "30",
+        "link": "cours/1/react"
     },
-    "menuItemList": {
-        "title": "Technologie",
-        "items": ["React","Angular","Vue js","JQuery"]
-    },
-    "menuItemList2": {
-        "title": "Audio",
-        "items": ["Logic pro X","Serum","Mixing","Production"]
-    },
-    "menuItemList3": {
-        "title": "Multimédia",
-        "items": ["Vidéo","Animation","3D","Graphisme"]
-    }     
+    "aside": [
+        {
+            "title": "Technologie",
+            "items": ["React","Angular","Vue js","JQuery"]
+        },
+        {
+            "title": "Audio",
+            "items": ["Logic pro X","Serum","Mixing","Production"]
+        },
+        {
+            "title": "Multimédia",
+            "items": ["Vidéo","Animation","3D","Graphisme"]
+        }
+    ]
 }
