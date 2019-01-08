@@ -4,22 +4,22 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import '../app.scss';
 import data from '../db.json';
+import colors from '../style-component/colors';
 
 const StyledButton = styled.button`
-  background: transparent;
+  background: ${props => props.primary ? colors.lightblue : colors.orange};
   border-radius: 3px;
-  border: 2px solid #fff;
-  color: ${props => props.primary ? "white" : "blue"};
+  color: #fff;
+  font-weight: bold;
   margin: 0.5em 1em;
   padding: 0.25em 1em;
-  
 `;
 
 const Button = ({
   primary,
 }) => {
   return (
-    <StyledButton>Normal Button</StyledButton>
+    <StyledButton primary={primary}>Normal Button</StyledButton>
   );
 };
 
