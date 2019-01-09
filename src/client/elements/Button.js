@@ -12,14 +12,15 @@ const StyledButton = styled.button`
   color: #fff;
   font-weight: bold;
   margin: 0.5em 1em;
-  padding: 0.25em 1em;
+  padding: 0 1.3em;
+  min-height: 48px;
 `;
 
 const Button = ({
   primary,
 }) => {
   return (
-    <StyledButton primary={primary}>Normal Button</StyledButton>
+    <StyledButton primary={primary}>Button</StyledButton>
   );
 };
 
