@@ -6,17 +6,30 @@ import colors from '../assets/styled/colors';
 import '../app.scss';
 
 const {
+  blue,
+  black,
+  grey,
   pink,
   yellow,
-  blue,
+  white,
 } = colors;
 
 const StyledButton = styled.button`
     min-height: 48px;
     padding: 0 20px;
-    border-radius: 5px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    font-weight: bold;
     &.read-more {
         background-color: ${pink};
+        color: ${white};
+        &:hover {
+            filter: brightness(70%);    
+        }
+        &:active {
+            background-color: ${white};
+            color: ${pink};  
+        }
     }
 `;
 
@@ -31,7 +44,7 @@ export default class Button extends Component {
       className,
     } = this.props;
     return (
-      <StyledButton className={className}>
+      <StyledButton className={className} type="button">
         {text}
       </StyledButton>
     );
