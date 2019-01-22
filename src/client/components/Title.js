@@ -14,13 +14,12 @@ const {
   white,
 } = colors;
 
-const StyledTitle = styled.h1`
+const StyledTitle = styled.div`
   color: ${white};
-  background-color: rgba(0, 0, 0, 0.6);
   border-radius: 5px;
   font-weight: 500;
-  font-size: 16px;
-  padding: 20px;  
+  font-size: 18px;
+  text-transform: uppercase;
 `;
 
 export default class Title extends Component {
@@ -30,22 +29,41 @@ export default class Title extends Component {
 
   render() {
     const {
-      text,
       className,
+      type,
+      title,
     } = this.props;
+    if (type === 4) {
+      return (
+        <StyledTitle className={className}>
+          <h4>{title}</h4>
+        </StyledTitle>
+      );
+    }
+    if (type === 3) {
+      return (
+        <StyledTitle className={className}>
+          <h3>{title}</h3>
+        </StyledTitle>
+      );
+    }
+    if (type === 2) {
+      return (
+        <StyledTitle className={className}>
+          <h2>{title}</h2>
+        </StyledTitle>
+      );
+    }
     return (
       <StyledTitle className={className}>
-        {text}
+        <h1>{title}</h1>
       </StyledTitle>
     );
   }
 }
-Title.defaultProps = {
-
-
-};
 
 Title.PropTypes = {
   className: PropTypes.string,
-  text: PropTypes.string,
+  type: PropTypes.string,
+  title: PropTypes.string,
 };

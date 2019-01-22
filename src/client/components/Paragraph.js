@@ -16,11 +16,8 @@ const {
 
 const StyledParagraph = styled.p`
   color: ${white};
-  background-color: rgba(0, 0, 0, 0.6);
-  border-radius: 5px;
   font-weight: 500;
   font-size: 16px;
-  padding: 20px;  
 `;
 
 export default class Paragraph extends Component {
